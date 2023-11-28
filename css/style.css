@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsla(195, 94%, 73%, 0.56);
+  background-image: radial-gradient(at 57% 87%, hsl(233, 87%, 67%) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(286, 87%, 67%) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(240, 87%, 67%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(201, 87%, 67%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(282, 87%, 67%) 0px, transparent 50%);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  background: linear-gradient(to right, #890095, #040c75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.motto {
+  font-family: "Wix Madefor Display", sans-serif;
+}/*# sourceMappingURL=style.css.map */

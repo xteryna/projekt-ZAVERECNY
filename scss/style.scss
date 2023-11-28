@@ -1,0 +1,47 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+$primary: #890095;
+$secondary: #686868;
+$c-transparent: rgba(0, 0, 0, 0);
+
+
+$f-titles: 'Wix Madefor Display', sans-serif;
+$f-text: 'Open Sans', sans-serif;
+$f-motto: 'Pinyon Script', cursive;
+
+$m-tablet: 768px;
+$m-PC: 960px;
+
+$text-gradient: linear-gradient(to right, #890095, #040c75);
+
+body {
+background-color:hsla(195,94%,73%,0.56);
+background-image:
+radial-gradient(at 57% 87%, hsla(233,87%,67%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(286,87%,67%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(240,87%,67%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(201,87%,67%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(282,87%,67%,1) 0px, transparent 50%);
+font-size: 16px;
+font-family: $f-text;
+// line-height: 150%;
+}
+
+h1 {
+    font-family: $f-titles;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    background: linear-gradient(to right, #890095, #040c75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    // background: linear-gradient(to right, #890095, #040c75)
+}
+
+.motto {
+    font-family: $f-titles;
+}
