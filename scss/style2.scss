@@ -213,8 +213,8 @@ h1 {
     aspect-ratio: 1/1;
     border-radius: 50%;
     opacity: 0.8;
-    // border: 1px solid $c-sedondary;
-    // background-color: $c-semitransparent;
+    border: 1px solid $c-sedondary;
+    background-color: $c-semitransparent;
     
     
         
@@ -230,8 +230,8 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     grid-column: 2;
-    // border: 1px solid $c-sedondary;
-    // background-color: $c-semitransparent;
+    border: 1px solid $c-sedondary;
+    background-color: $c-semitransparent;
 }
 @media screen and (min-width: $m-tablet) {
     .motto {

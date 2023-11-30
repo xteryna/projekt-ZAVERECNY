@@ -28,10 +28,6 @@ p {
   color: #890095;
 }
 
-h1 {
-  margin: 20px 0;
-}
-
 h2 {
   margin: 0;
   font-size: 18px;
@@ -39,12 +35,15 @@ h2 {
 }
 
 .content {
-  max-width: 1200px;
   margin: auto;
-  padding: 20px 5% 50px;
+  padding: 20px 0 50px;
+}
+
+.gradient {
   background-color: hsla(175, 100%, 82%, 0.77);
   background-image: radial-gradient(at 82% 29%, hsla(320, 86%, 62%, 0.52) 0px, transparent 50%), radial-gradient(at 51% 18%, hsl(102, 84%, 72%) 0px, transparent 50%), radial-gradient(at 76% 71%, hsla(347, 100%, 70%, 0.28) 0px, transparent 50%), radial-gradient(at 54% 81%, hsla(284, 73%, 64%, 0.76) 0px, transparent 50%), radial-gradient(at 0% 80%, hsla(359, 100%, 84%, 0.87) 0px, transparent 50%), radial-gradient(at 30% 70%, hsl(169, 100%, 50%) 0px, transparent 50%), radial-gradient(at 99% 79%, hsla(54, 100%, 70%, 0.5) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(293, 100%, 76%) 0px, transparent 50%);
   background-attachment: fixed;
+  border: 1px solid #890095;
 }
 
 .logo {
@@ -86,8 +85,12 @@ h2 {
 }
 .menu__item:hover {
   color: #890095;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(217, 217, 217, 0.3);
+  background-color: hsla(175, 100%, 82%, 0.77);
+  background-image: radial-gradient(at 82% 29%, hsla(320, 86%, 62%, 0.52) 0px, transparent 50%), radial-gradient(at 51% 18%, hsl(102, 84%, 72%) 0px, transparent 50%), radial-gradient(at 76% 71%, hsla(347, 100%, 70%, 0.28) 0px, transparent 50%), radial-gradient(at 54% 81%, hsla(284, 73%, 64%, 0.76) 0px, transparent 50%), radial-gradient(at 0% 80%, hsla(359, 100%, 84%, 0.87) 0px, transparent 50%), radial-gradient(at 30% 70%, hsl(169, 100%, 50%) 0px, transparent 50%), radial-gradient(at 99% 79%, hsla(54, 100%, 70%, 0.5) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(293, 100%, 76%) 0px, transparent 50%);
+  background-attachment: fixed;
   border-radius: 5px;
+  border: 1px solid #890095;
 }
 .menu__checkbox:checked ~ .menu__box {
   display: block;
@@ -99,9 +102,8 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  background: linear-gradient(to right, #890095, #040c75);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding: 20px 0;
+  color: #890095;
 }
 
 @media screen and (min-width: 550px) {
@@ -116,23 +118,24 @@ h1 {
   .menu__item {
     border-bottom: 0;
   }
-  h1 {
-    grid-column: 1/span 2;
-    justify-self: center;
-  }
 }
 @media screen and (min-width: 900px) {
-  .header {
+  .header__top {
     display: grid;
     grid-template-columns: auto 1fr;
     justify-items: flex-end;
     align-items: center;
+    padding: 0 5%;
   }
   .menu {
     display: grid;
     justify-content: center;
   }
 }
+.main {
+  padding: 0 5%;
+}
+
 .motto {
   font-family: "Pinyon Script", cursive;
   font-size: 20px;
@@ -155,6 +158,7 @@ h1 {
   aspect-ratio: 1/1;
   border-radius: 50%;
   opacity: 0.8;
+  border: 1px solid #890095;
 }
 
 .sluzby__item {
@@ -199,4 +203,4 @@ h1 {
     -o-object-fit: cover;
        object-fit: cover;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style3.css.map */
