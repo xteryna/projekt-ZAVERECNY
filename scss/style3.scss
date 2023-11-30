@@ -190,6 +190,8 @@ h1 {
         justify-items: flex-end;
         align-items: center;
         padding: 0 5%;
+        max-width: 1200px;
+        margin: auto;
     }
 
     .menu {
@@ -202,6 +204,8 @@ h1 {
 // konkretni obsah stranky
 .main {
     padding: 0 5%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .motto {
