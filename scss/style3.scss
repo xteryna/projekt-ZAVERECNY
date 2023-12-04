@@ -118,6 +118,7 @@ h2 {
         text-decoration: none;
         text-align: center;
         color: $c-sedondary;
+        
         // border-bottom: 1px solid $c-sedondary;
     
         &:hover {
@@ -153,6 +154,7 @@ h1 {
     text-align: center;
     font-weight: 400;
     padding: 20px 0;
+    margin-top: 0;
 
 
     color: $c-primary;
@@ -176,7 +178,7 @@ h1 {
             justify-content: center;
         }
         &__item {
-            border-bottom: 0;
+            border: 1px solid $c-transparent; //přidat ke všem šablonám
         }
     }
 
@@ -289,4 +291,111 @@ h1 {
         object-fit: cover;
         // max-height: 300px;
     }
+}
+
+
+
+
+// stranka recenze
+
+.feedback {
+    border: 1px solid $c-primary;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 20px auto;
+    
+    &__name, &__date {
+        text-align: center;
+    }
+
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+// stranka kontakty
+
+.social-networks {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    &__icon {
+        width: 70px;
+
+    }
+}
+
+.line {
+    border-top: 1px solid $c-primary
+}
+
+// stranka o mne
+.divided {
+    margin-bottom: 40px;
+}
+.divided__image {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid $c-primary ;
+    margin: auto;
+    display: block;
+}
+@media screen and (max-width: $m-PC) {
+    .divided__image {
+        max-width: 400px;
+        
+    }
+    
+}
+@media screen and (min-width: $m-PC) {
+    .divided {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 40px;
+
+        &__image {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+  
+
+// stranka cenik
+.pricing{
+    display: grid;
+    grid-template-columns: 250px;
+    gap: 30px;
+    justify-content: center;
+    
+
+    
+    &__item {
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid $c-primary;
+        text-align: center;
+        
+    }
+
+    &__description {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $m-tablet) {
+    .pricing {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+
+@media screen and (min-width: $m-PC) {
+    .pricing {
+        grid-template-columns: repeat(3, 250px);
+    }
+
 }
