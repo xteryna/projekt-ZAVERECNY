@@ -4,14 +4,15 @@ html { box-sizing: border-box; }
 
 $c-primary: #890095;
 $c-sedondary: #434343;
-$c-transparent: motomottorgba(0, 0, 0, 0);
+$c-transparent: rgba(0, 0, 0, 0);
 $c-semitransparent:  rgba(255, 255, 255, 0.3);
 
 
 $f-titles: 'Wix Madefor Display', sans-serif;
 $f-text: 'Open Sans', sans-serif;
 // $f-motto: 'Pinyon Script', cursive;
-$f-motto: 'Halimun', sans-serif;
+$f-motto: 'Qwitcher Grypen', cursive;
+// $f-motto: 'Open Sans', sans-serif;
 
 $m-tablet: 550px;
 $m-PC: 900px;
@@ -213,7 +214,7 @@ h1 {
 }
 
 .motto {
-    font-family: 'Halimun', sans-serif;
+    font-family: $f-motto;
     font-size: 20px;
     text-align: center;
     margin: 20px auto 40px;
@@ -350,8 +351,6 @@ h1 {
     border: 1px solid $c-primary ;
     margin: auto;
     display: block;
-   
-    }
 }
 @media screen and (max-width: $m-PC) {
     .divided__image {
