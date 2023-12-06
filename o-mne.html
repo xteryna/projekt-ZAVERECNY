@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lenka Šeblová-o mne</title>
+	<title>Lenka Šeblová- O mně</title>
 
 	<!-- Náš vlastní styl -->
 
@@ -13,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/halimun" rel="stylesheet">
-                
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap&family=Montserrat:wght@200;300;400" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&family=Allura&family=Dancing+Script&family=Montserrat:wght@200;300;400&family=Parisienne&family=Qwitcher+Grypen&family=Zeyada&display=swap" rel="stylesheet">          
 	
 </head>
 
@@ -23,20 +25,22 @@
         <header class="header">
             <div class="header__top">
                 <div class="logo">
-                    Lenka Šeblová <br>
-                    laktační poradenství
+                    
+                    <img class="logo__image" src="images/logo-kruh.webp" alt="logo">
+                    <p class="logo__text">
+                        <span class="logo__name">Lenka Šeblová </span><br>
+                        laktační poradenství
+                    </p>
                 </div>
             
                 <nav class="menu">
-                    <!-- <img class="menu__icon" src="icons/menu.svg"> -->
-
+                    
                     <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-                    <label for="menu-checkbox" class="menu__toggler"><svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></label>
-                    <!-- <label for="menu-checkbox" class="menu__toggler">menu</label> -->
+                    <label for="menu-checkbox" class="menu__toggler">≡</label>
                     
                     <div class="menu__box">
                         <a class="menu__item" href="index.html">Úvod</a>
-                        <a class="menu__item" href="o-mne.html">O mne</a>
+                        <a class="menu__item" href="o-mne.html"> O mně</a>
                         <a class="menu__item" href="sluzby.html">Služby</a>
                         <a class="menu__item" href="cenik.html">Ceník</a>
                         <a class="menu__item" href="recenze.html">Recenze</a>
@@ -45,7 +49,7 @@
                 </nav>
             </div>
             
-            <h1 class="gradient">O mně</h1>
+            
             
             
         </header>
@@ -53,37 +57,43 @@
 
 
         <main class="main">
+            <div class="highlighted gradient">
 
-            <div class="divided">
-                <div class="divided_i">
-                    <img  class="divided__image" src="images/s-detmi.webp">
-                </div>
+                
 
-                <div class="divided__text">
-                    <p>
-                        Jmenuji se Lenka, jsem certifikovaná laktační poradkyně <a href="https://www.mamila.sk/sk/uvod/">Mamila, o. z.</a> a jsem maminka dvou dětí.
-                    </p>
-                    <p>    
-                        Při kojení mých dětí jsem si prošla různými komplikacemi a nepochopením ze strany okolí. Věděla jsem, že kojení je pro nás velmi důležité. S druhým dítětem jsem začala navštěvovat podpůrné kojící skupiny, kde jsem našla velkou podporu a krásná přátelství. Za to jsem nesmírně vděčná a jsem ráda, že mohu tuto pomoc a podporu ve formě poradenství předávat dál. Na kojení se společnost dívá primárně jako na krmení.
-                    </p>
-                    <div class="motto">
-                        Kojení je však mnohem víc než jen krmení. Kojení je péče o dítě a tvorba jedinečného vztahu mezi vámi.
+                <div class="divided">
+                    <div class="divided__textwrap">
+                        <h1>O mně</h1>
+                        <p>
+                            Jmenuji se Lenka, jsem certifikovaná laktační poradkyně <a href="https://www.mamila.sk/sk/uvod/">Mamila, o. z.</a> a jsem maminka dvou dětí.
+                        </p>
+                        <p>    
+                            Při kojení mých dětí jsem si prošla různými komplikacemi a nepochopením ze strany okolí. Věděla jsem, že kojení je pro nás velmi důležité. S druhým dítětem jsem začala navštěvovat podpůrné kojící skupiny, kde jsem našla velkou podporu a krásná přátelství. Za to jsem nesmírně vděčná a jsem ráda, že mohu tuto pomoc a podporu ve formě poradenství předávat dál. Na kojení se společnost dívá primárně jako na krmení.
+                        </p>
+                        <div class="motto">
+                            Kojení je však mnohem víc než jen krmení. Kojení je péče o dítě a tvorba jedinečného vztahu mezi vámi.
+                        </div>
+                        <p>
+                            Ráda Vám předám informace o kojení a pomůžu Vám s potížemi. 
+                        </p>
+                        <p>
+                            Také Vás srdečně zvu do podpůrných skupin, které pořádáme společně s mými kamarádkami a laktačními poradkyněmi <a href="http://www.kojeni-most.cz/">Petrou Topinkovou</a> a <a href="https://www.andreasirko.cz/">Andreou Sirko</a>.
+                        </p>
+                    </div> 
+
+                    <div class="divided__imagewrap">
+                        <img  class="divided__image" src="images/s-detmi.webp">
                     </div>
-                    <p>
-                        Ráda Vám předám informace o kojení a pomůžu Vám s potížemi. 
-                    </p>
-                    <p>
-                        Také Vás srdečně zvu do podpůrných skupin, které pořádáme společně s mými kamarádkami a laktačními poradkyněmi <a href="http://www.kojeni-most.cz/">Petrou Topinkovou</a> a <a href="https://www.andreasirko.cz/">Andreou Sirko</a>.
-                    </p>
-                </div>  
+                </div>
             </div>
 
-
-            <div class="kurzy">
-                <h2> Absolvované kurzy:</h2>
-                <div>
-                    Kurz O Dojčení, pořadatel Mamila, o. z. 
-                    Trnava, 9-11/2023
+            <div class="non-highlighted">
+                <div class="kurzy">
+                    <h2> Absolvované kurzy:</h2>
+                    <div>
+                        Kurz O Dojčení, pořadatel Mamila, o. z. 
+                        Trnava, 9-11/2023
+                    </div>
                 </div>
             </div>
             
