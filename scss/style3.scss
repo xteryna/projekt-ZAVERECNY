@@ -56,7 +56,7 @@ h2 {
 .content {
     // max-width: 1200px;
     margin: auto;
-    padding: 20px 0 50px;
+    padding-bottom: 50px;
 
 }
 
@@ -78,6 +78,9 @@ h2 {
 
 
 // část header
+.header__top {
+    padding-top: 10px;
+}
 
 .logo {
     display: flex;
@@ -106,7 +109,7 @@ h2 {
 
 .menu{
     height: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     
 
     &__checkbox {
@@ -216,7 +219,7 @@ h1 {
         grid-template-columns: auto 1fr;
         justify-items: flex-end;
         align-items: center;
-        padding: 0 5%;
+        padding: 10px 5%;
         max-width: 1200px;
         margin: auto;
     }
@@ -370,7 +373,7 @@ h1 {
         width: 80%;
         max-width: 500px;
         border-radius: 10px;
-        border: 1px solid $c-primary ;
+        // border: 1px solid $c-primary ;
         margin: auto;
         display: block;
     }
