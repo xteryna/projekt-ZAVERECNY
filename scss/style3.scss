@@ -13,51 +13,55 @@ $f-text: 'Open Sans', sans-serif;
 // $f-motto: 'Pinyon Script', cursive;
 $f-motto: 'Qwitcher Grypen', cursive;
 
+$pad-sides: 5vw;
+
 
 $m-tablet: 550px;
-$m-PC: 900px;
+$m-PC: 1000px;
 
 
 
 body {
-
-    background-size: 1vh;
-    font-size: 14px;
+    font-size: clamp(0.8rem, 1vw + 0.5rem ,1rem);
     font-family: $f-text;
     margin: 0;
-
 }
 
 p {
-    line-height: 150%;
+    line-height: 140%;
     text-align: justify;
     color: $c-sedondary;
 }
-
+// short?
 .short {
     margin: 20px;
     text-align: center;
 }
-
+// relation?
 .relation {
     color: $c-primary;
 }
 
 
 h2 {
-    margin: 0;
-    font-size: 18px;
+    margin: 1rem 0 0;
+    font-size: clamp(1.1rem, 1vw + 0.6rem ,1.3rem);
     color: $c-sedondary;
 }
 
-// div {
-//     border: 1px solid black;
-// }
-.content {
-    // max-width: 1200px;
-    margin: auto;
-    padding-bottom: 50px;
 
+// .content {
+//     // max-width: 1200px;
+//     margin: auto;
+//     padding-bottom: 50px;
+
+// }
+.center {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 .gradient {
@@ -79,37 +83,45 @@ h2 {
 
 // část header
 .header__top {
-    padding-top: 10px;
+    padding-top: 0.5rem;
+    
 }
 
+// .left {text-align: right;}
 .logo {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     
     &__image {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
+        color: red;
 
     }
 
     &__text {
-        text-align: center;
+        text-align: block;
         color: $c-sedondary;
         text-transform: uppercase;
         font-family: $f-titles;
     }
 
     &__name {
-        font-size: 20px;
+        font-size: 140%;
         letter-spacing: 0.2em;
     }
+
+    &__description {
+        letter-spacing: 0.14em;
+    }
+ 
 }
 
 .menu{
     height: 100%;
-    margin: 10px 0;
+    margin: 1rem 0;
     
 
     &__checkbox {
@@ -119,17 +131,12 @@ h2 {
 
     &__toggler {
         cursor: pointer;
-        font-size: 50px;
+        font-size: 4rem;
         text-align: center;
         display: block;
+        color: $c-sedondary;
     }
-    // &__icon {
-    //     width: 40px;
-    //     height: 40px;
-    //     display: block;
-    //     margin: auto;
-    //     fill: $c-sedondary;
-    // }
+ 
 
     &__box {
         display: none;
@@ -140,12 +147,12 @@ h2 {
         
     &__item {
         display: block;
-        padding: 5px;
+        padding: 0.5rem;
         text-transform: uppercase;
         text-decoration: none;
         text-align: center;
         color: $c-sedondary;
-        border: 1px solid $c-transparent;
+        // border: 1px solid $c-transparent;
         
     
         &:hover {
@@ -164,7 +171,7 @@ h2 {
            
             background-attachment: fixed;
             border-radius: 5px;
-            border: 1px solid $c-primary;
+            // border: 1px solid $c-primary;
         }
     }
 
@@ -174,22 +181,7 @@ h2 {
 
 }
 
-h1 {
-    font-family: $f-titles;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 400;
-    padding: 20px 0;
-    margin: 0;
 
-
-    color: $c-primary;
-    
-    // background: linear-gradient(to right, #890095, #040c75);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-}
 
 @media screen and (min-width: $m-tablet) {
 
@@ -205,8 +197,9 @@ h1 {
             justify-content: center;
         }
         &__item {
-            padding: 15px;
-            border: 1px solid $c-transparent; //přidat ke všem šablonám
+            padding: 1em;
+            
+            // border: 1px solid $c-transparent;
         }
     }
 
@@ -216,22 +209,37 @@ h1 {
 @media screen and (min-width: $m-PC) {
     .header__top{
         display: grid;
-        grid-template-columns: auto 1fr;
-        justify-items: flex-end;
+        grid-template-columns: 40% 1fr;
+        justify-items: center;
         align-items: center;
-        padding: 10px 5%;
         max-width: 1200px;
         margin: auto;
     }
 
     .menu {
         display: grid;
-        justify-content: center;
     }
 }
 
 
 // konkretni obsah stranky
+h1 {
+    font-family: $f-titles;
+    font-size: clamp(2rem, 2vw + 2rem ,5rem);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    padding: 1rem 0;
+    margin: 0;
+
+
+    color: $c-primary;
+    
+    background: linear-gradient(to right, #e644f4, #010864);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .main {
     
     max-width: 1200px;
@@ -240,12 +248,81 @@ h1 {
 
 .motto {
     font-family: $f-motto;
-    font-size: 20px;
-    text-align: center;
-    margin: 20px auto 40px;
+    font-size: clamp(1.5rem, 6vw + 1rem, 2.4rem);
+    margin: 1rem auto 3rem;
     color: $c-primary;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+// .title-bar {
+//     margin-bottom: 3rem;
+// }
+
+// stranka uvod, o mne
+.divided {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+    
+    &__textwrap {
+        padding: 0 $pad-sides 2rem;
+    }
+
+    &__image {
+        width: min(100%, 400px);
+        border-radius: 10px;
+        // border: 1px solid $c-primary ;
+        margin: auto;
+        display: block;
+      
+    }
 }
 
+li {
+    list-style-type:" - ";
+}
+
+.kurzy {
+    padding-block: 3rem;
+    
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: $m-PC) {
+    .divided {
+        padding: 0;
+        grid-template-columns: 40% 1fr;
+        grid-auto-flow: dense;
+        
+
+        &__textwrap {
+            grid-column: 2;
+        }
+
+        &__image {
+            margin: 0;
+            border-radius: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// ostatni stranky
+.inside {
+    padding: 1rem $pad-sides;
+}
+
+// stranka sluzby
 .architecture {
     margin: 40px auto;
     display: grid;
@@ -283,17 +360,9 @@ h1 {
     // border: 1px solid $c-sedondary;
     // background-color: $c-semitransparent;
 }
-@media screen and (min-width: $m-tablet) {
-    .motto {
-        font-size: 25px;
-    }
-}
+
 
 @media screen and (min-width: $m-PC) {
-
-    .motto {
-        font-size: 35px
-    }
 
     .architecture{
     grid-template-columns: repeat(3, 1fr);
@@ -322,126 +391,98 @@ h1 {
 }
 
 .non-highlighted {
-    padding: 20px 5%;
+    padding: 20px $pad-sides;
 }
 
 
 // stranka recenze
+.review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-block: 3rem;
+}
 
-.feedback {
+@media screen and (min-width: $m-PC) {
+    .review {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.framed-item {
     border: 1px solid $c-primary;
     border-radius: 10px;
-    padding: 0 20px;
-    margin: 20px auto;
+    padding: 0.5rem;
     
-    &__name, &__date {
-        text-align: center;
+
+    & p{
+        margin: 5px;
+    }
+    
+    &__title {
+        font-weight: 600;
     }
 
 }
 
-.upper {
-    text-transform: uppercase;
-}
+
 
 // stranka kontakty
 
 .social-networks {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+    display: flex;
+    
+    gap: 2rem;
     justify-content: center;
     &__icon {
         width: 70px;
-
     }
 }
 
 .line {
+    padding: 2rem 0;
     border-top: 1px solid $c-primary
 }
 
-// stranka o mne
-.divided {
-    padding: 0 5% 40px;
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-
-    &__image {
-        width: 80%;
-        max-width: 500px;
-        border-radius: 10px;
-        // border: 1px solid $c-primary ;
-        margin: auto;
-        display: block;
-    }
-}
-
-
-
-
-
-
-@media screen and (min-width: $m-PC) {
-    .divided {
-        padding: 0;
-        display: grid;
-        grid-template-columns: 40% 1fr;
-        grid-auto-flow: dense;
-        gap: 0;
-
-        &__textwrap {
-            padding:  0 5vw 20px;
-            grid-column: 2;
-        }
-
-        &__image {
-            margin: 0;
-            border-radius: 0;
-            border: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+.highlight {
+    font-size: 1.5rem;
 }
   
 
 // stranka cenik
 .pricing{
     display: grid;
-    grid-template-columns: 250px;
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     justify-content: center;
-    
-
-    
-    &__item {
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid $c-primary;
-        text-align: center;
-        
-    }
-
-    &__description {
-        margin: 0;
-        text-align: center;
-    }
+    margin: 3rem auto;
 }
 
 @media screen and (min-width: $m-tablet) {
     .pricing {
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
     }
 }
 
-
 @media screen and (min-width: $m-PC) {
     .pricing {
-        grid-template-columns: repeat(3, 250px);
+        grid-template-columns: repeat(3, 1fr);
     }
 
+}
+
+
+
+div {
+    border: 1px solid black;
+}
+
+.footer {
+    max-width: 1200px;
+    padding: 1rem $pad-sides;
+    font-size: 80%;
+    color: $c-sedondary; 
+    margin: auto;
 }

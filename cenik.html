@@ -20,20 +20,31 @@
         <header class="header">
             <div class="header__top">
                 <div class="logo">
-                    Lenka Šeblová <br>
-                    laktační poradenství
+                    <!-- <p class="logo__text left">
+                        <span class="logo__name">Lenka</span><br>
+                        . . laktační
+                    </p>
+                    <img class="logo__image" src="images/logo-kruh.webp" alt="logo">
+                    <p class="logo__text">
+                        <span class="logo__name">Šeblová</span><br>
+                        poradenství
+                    </p> -->
+
+                    <img class="logo__image" src="images/logo-kruh.webp" alt="logo">
+                    <p class="logo__text block">
+                        <span class="logo__name">Lenka Šeblová</span><br>
+                        <span class="logo__description"> laktační poradenství</span>
+                    </p>
                 </div>
             
                 <nav class="menu">
-                    <!-- <img class="menu__icon" src="icons/menu.svg"> -->
-
+                    
                     <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-                    <label for="menu-checkbox" class="menu__toggler"><svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></label>
-                    <!-- <label for="menu-checkbox" class="menu__toggler">menu</label> -->
+                    <label for="menu-checkbox" class="menu__toggler">≡</label>
                     
                     <div class="menu__box">
                         <a class="menu__item" href="index.html">Úvod</a>
-                        <a class="menu__item" href="o-mne.html">O mně</a>
+                        <a class="menu__item" href="o-mne.html"> O mně</a>
                         <a class="menu__item" href="sluzby.html">Služby</a>
                         <a class="menu__item" href="cenik.html">Ceník</a>
                         <a class="menu__item" href="recenze.html">Recenze</a>
@@ -50,70 +61,85 @@
 
 
         <main class="main">
-            <h1 class="gradient">Ceník</h1>
-        
-            <div class="motto">
-                Kojení je mnohem víc než jen krmení. Je to péče o dítě a tvorba jedinečného vztahu.
+            <div class="title-bar gradient">
+                <h1 >Ceník</h1>
             </div>
 
-            <p class="short">Většina zdravotních pojišťoven proplácí služby laktační poradkyně. Informujte se přímo u své pojišťovny.</p>
-            
-            <div class="pricing">
-                <div class="pricing__item">
-                    <h2 class="pricing__title">První osobní setkání</h2>
-                    <p class="pricing__description">Délka trvání cca 90 min<br>700 Kč</p>
+            <div class="inside">
+                <div class="motto">
+                    <span>Kojení je mnohem víc než jen krmení.</span> <span>Je to péče o dítě a tvorba jedinečného vztahu.</span>
                 </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Druhé a další setkání</h2>
-                    <p class="pricing__description">Délka trvání cca 60 min<br>500 Kč</p>
-                </div>
+                <p class="short">Většina zdravotních pojišťoven proplácí služby laktační poradkyně. Informujte se přímo u své pojišťovny.</p>
+                
+                <div class="pricing">
+                    <div class="framed-item">
+                        <p class="framed-item__title center">První osobní setkání</p>
+                        <p class="framed-item__text1 center">Délka trvání cca 90 min</p>
+                        <p class="fremed-item__text2 center">700 Kč</p>
+                    </div>
+ 
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Druhé a další setkání</p>
+                        <p class="framed-item__text1 center">Délka trvání cca 60 min</p>
+                        <p class="fremed-item__text2 center">500 Kč</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Telefonické poradenství</h2>
-                    <p class="pricing__description">Cena za 60 min - 500 Kč<br>rychlá rada do 10 min - zdarma</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Telefonické poradenství</p>
+                        <p class="framed-item__text1 center">Cena za 60 min - 500 Kč</p>
+                        <p class="fremed-item__text2 center">rychlá rada do 10 min - zdarma</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Příprava na kojení</h2>
-                    <p class="pricing__description">3x120 min<br>1800 Kč</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Příprava na kojení</p>
+                        <p class="framed-item__text1 center">3x120 min</p>
+                        <p class="fremed-item__text2 center">1800 Kč</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Poradenství při nošení</h2>
-                    <p class="pricing__description">Délka trvání cca 60 min<br>500 Kč</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Poradenství při nošení</p>
+                        <p class="framed-item__text1 center">Délka trvání cca 60 min</p>
+                        <p class="fremed-item__text2 center">500 Kč</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Podpůrná skupina</h2>
-                    <p class="pricing__description">zdarma</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Podpůrná skupina</p>
+                        <p class="framed-item__text1 center">zdarma</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Půjčovna</h2>
-                    <p class="pricing__description">50 Kč/týden</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Půjčovna</p>
+                        <p class="framed-item__text1 center">50 Kč/týden</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">E-mailové poradenství</h2>
-                    <p class="pricing__description">zdarma
-                    </p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">E-mailové poradenství</p>
+                        <p class="framed-item__text1 center">zdarma
+                        </p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Online poradenství</h2>
-                    <p class="pricing__description">xxx<br>xxx</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Online poradenství</p>
+                        <p class="framed-item__text1 center">xxx</p>
+                        <p class="fremed-item__text2 center">xxx</p>
+                    </div>
 
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Cestovné</h2>
-                    <p class="pricing__description">7 Kč/ km<br>v rámci Mostu zdarma</p>
-                </div>
+                    <div class="framed-item">
+                        <p class="framed-item__title center">Cestovné</p>
+                        <p class="framed-item__text1 center">7 Kč/ km</p>
+                        <p class="fremed-item__text2 center">v rámci Mostu zdarma</p>
+                    </div>
 
+                </div>
             </div>
             
 
         </main>
+
+        <footer class="footer gradient center">
+            copyright: Tereza Beránková 2023
+        </footer>
 
 
 
