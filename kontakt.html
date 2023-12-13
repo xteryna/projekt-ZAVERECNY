@@ -1,5 +1,5 @@
 ---
-layout: /layouts/sablona-hlavni.njk
+layout: layouts/stranka.njk
 title: Lenka Šeblová - kontakt
 ---
 
@@ -11,9 +11,8 @@ title: Lenka Šeblová - kontakt
     </div>
 
     <div class="inside">
-        <div class="motto">
-            <span>Kojení je mnohem víc než jen krmení.</span> <span>Je to péče o dítě a tvorba jedinečného vztahu.</span>
-        </div>
+        
+        {% include 'partials/motto.njk' %}
 
         <div class="personal-contact">
             <p class="center">

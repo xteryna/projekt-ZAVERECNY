@@ -1,5 +1,5 @@
 ---
-layout: /layouts/sablona-hlavni.njk
+layout: layouts/stranka.njk
 title: Lenka Šeblová - Ceník
 ---
 
@@ -11,9 +11,8 @@ title: Lenka Šeblová - Ceník
     </div>
 
     <div class="inside">
-        <div class="motto">
-            <span>Kojení je mnohem víc než jen krmení.</span> <span>Je to péče o dítě a tvorba jedinečného vztahu.</span>
-        </div>
+        
+        {% include 'partials/motto.njk' %}
 
         <p class="short">Většina zdravotních pojišťoven proplácí služby laktační poradkyně. Informujte se přímo u své pojišťovny.</p>
         

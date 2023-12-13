@@ -1,5 +1,5 @@
 ---
-layout: /layouts/sablona-hlavni.njk
+layout: layouts/stranka.njk
 title: Lenka Šeblová - služby
 ---    
 
@@ -9,10 +9,9 @@ title: Lenka Šeblová - služby
             </div>
 
             <div class="inside">
-                <div class="motto">
-                    <span>Kojení je mnohem víc než jen krmení.</span> <span>Je to péče o dítě a tvorba jedinečného vztahu.</span>
-                </div>
-        
+               
+                {% include 'partials/motto.njk' %}
+                
                 <div class="offer">
                     <div class="offer__text gradient">
                         <h2>Poradenství při kojení</h2>
