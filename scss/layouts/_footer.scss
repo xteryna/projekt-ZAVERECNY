@@ -1,0 +1,9 @@
+@use 'abstracts/variables';
+
+
+.footer {
+    padding: 1rem variables.$pad-sides;
+    font-size: 80%;
+    color: variables.$c-sedondary; 
+    margin: auto;
+}

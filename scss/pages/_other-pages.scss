@@ -1,0 +1,147 @@
+@use 'abstracts/variables';
+
+.inside {
+    padding: 1rem variables.$pad-sides;
+}
+
+
+// stranka o mne
+.courses {
+    padding-block: 3rem;
+    
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+// stranka offer
+.offer {
+    margin: 3rem auto;
+    display: grid;
+    gap: 4vw;
+    grid-template-columns: 25% 1fr;
+    grid-auto-flow: dense;
+
+    &__img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1;
+        opacity: 0.8;       
+    }
+
+    &__item {
+        display: grid;
+        align-content: center;
+        grid-column: 1;
+        border-radius: 10px;       
+    }
+
+    &__text {
+        padding: 0 3vw;
+        border-radius: 10px;
+        grid-column: 2;
+        opacity: 0.8;
+    }
+}
+
+
+
+@media screen and (min-width:variables.$m-PC) {
+
+    .offer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        
+        &__text {
+            grid-column: unset;
+        }
+        &__item {
+            display: block;
+            grid-column: unset;
+        &:last-child {
+            display: none;
+        }
+        }
+        &__img {
+            border-radius: 10px;
+            aspect-ratio: unset;
+            height: 100%;
+            object-fit: cover;
+            }
+    }
+    
+}
+
+
+
+// stranka recenze
+.review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-block: 3rem;
+}
+
+.line {
+    padding: 2rem 0;
+    border-top: 1px solid variables.$c-primary
+}
+
+@media screen and (min-width:variables.$m-PC) {
+    .review {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.framed-item {
+    border-radius: 10px;
+    box-shadow: variables.$shadow;
+    padding: 0.5rem;
+    
+    & p{
+        margin: 5px;
+    }
+    
+    &__title {
+        font-weight: 600;
+    }
+}
+
+// stranka cenik
+.pricing{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+@media screen and (min-width:variables.$m-tablet) {
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+    }
+}
+
+@media screen and (min-width:variables.$m-PC) {
+    .pricing {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+// stranka kontakty
+
+.social-networks {
+    display: flex;
+    
+    gap: 2rem;
+    justify-content: center;
+    &__icon {
+        width: 70px;
+    }
+}

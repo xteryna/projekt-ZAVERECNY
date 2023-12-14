@@ -1,0 +1,40 @@
+@use 'abstracts/variables';
+
+.divided {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+    
+    &__textwrap {
+        padding: 0 variables.$pad-sides 2rem;
+    }
+
+    &__image {
+        width: min(100%, 400px);
+        border-radius: 10px;
+        // border: 1px solid variables.$c-primary ;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width:variables.$m-PC) {
+    .divided {
+        padding: 0;
+        grid-template-columns: 40% 1fr;
+        grid-auto-flow: dense;
+        
+        &__textwrap {
+            grid-column: 2;
+        }
+
+        &__image {
+            margin: 0;
+            border-radius: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

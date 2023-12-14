@@ -1,0 +1,12 @@
+@use 'abstracts/variables';
+
+.motto {
+    font-family: variables.$f-motto;
+    font-size: clamp(1.5rem, 6vw + 1rem, 2.4rem);
+    margin: 1rem auto 3rem;
+    color: variables.$c-primary;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}

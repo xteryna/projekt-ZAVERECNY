@@ -1,0 +1,65 @@
+@use 'abstracts/variables';
+
+.menu{
+    height: 100%;
+    margin: 1rem 0;
+    
+
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+
+        &:checked ~ &__box {
+            display: block;
+        }
+    }
+
+    &__toggler {
+        cursor: pointer;
+        font-size: 4rem;
+        text-align: center;
+        display: block;
+        color: variables.$c-sedondary;
+    }
+ 
+    &__box {
+        display: none;
+        margin: auto;
+        width: 50%;
+    }
+        
+    &__item {
+        display: block;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        text-decorationquery: none;
+        text-align: center;
+        color: variables.$c-sedondary;        
+    
+        &:hover {
+            color: variables.$c-primary;
+            background-image: variables.$gradient-back;
+            background-attachment: fixed;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:variables.$m-tablet) {
+   .menu {
+        &__toggler {
+            display: none;
+        }
+
+        &__box {
+            display: flex !important;
+            width: 100%;
+            justify-content: center;
+        }
+        &__item {
+            padding: 1em;
+        }
+    }
+}

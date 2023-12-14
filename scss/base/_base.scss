@@ -1,0 +1,61 @@
+@use 'abstracts/variables';
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    font-size: clamp(0.8rem, 1vw + 0.5rem ,1rem);
+    font-family: variables.$f-text;
+    margin: 0;
+}
+
+p {
+    line-height: 140%;
+    text-align: justify;
+    color: variables.$c-sedondary;
+}
+
+h1 {
+    font-family: variables.$f-titles;
+    font-size: clamp(2rem, 2vw + 2rem ,5rem);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    padding-block: 1rem;
+    margin: 0;
+    color: variables.$c-primary;
+    
+    background: variables.$gradient-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    margin: 1rem 0 0;
+    font-size: clamp(1.1rem, 1vw + 0.6rem ,1.3rem);
+    color: variables.$c-sedondary;
+}
+
+div {
+    border: 1px solid black;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.gradient {
+    background-color: variables.$c-background;
+    background-image: variables.$gradient-back;
+    background-attachment: fixed;
+}
+
+.list__item {
+    list-style-type:" - ";
+}

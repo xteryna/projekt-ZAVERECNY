@@ -1,0 +1,18 @@
+@use 'abstracts/variables';
+
+.header__top {
+    padding-top: 0.5rem;
+}
+
+
+
+@media screen and (min-width:variables.$m-PC) {
+    .header__top{
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        justify-items: center;
+        align-items: center;
+        // max-width: 1200px;
+        margin: auto;
+    }
+}
