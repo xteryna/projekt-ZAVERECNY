@@ -1,17 +1,12 @@
 @use '../abstracts/variables';
 
 .menu{
-    height: 100%;
-    margin: 1rem 0;
     
-
+    
+    
     &__checkbox {
         position: absolute;
         left: -9999px;
-
-        &:checked ~ &__box {
-            display: block;
-        }
     }
 
     &__toggler {
@@ -32,18 +27,22 @@
         display: block;
         padding: 0.5rem;
         text-transform: uppercase;
-        text-decorationquery: none;
+        text-decoration: none;
         text-align: center;
         color: variables.$c-sedondary;        
     
         &:hover {
             color: variables.$c-primary;
-            background-image: variables.$gradient-back;
-            background-attachment: fixed;
+            box-shadow: variables.$shadow;
             border-radius: 5px;
         }
     }
+
+    &__checkbox:checked ~ &__box {
+        display: block;
+    }
 }
+
 
 
 

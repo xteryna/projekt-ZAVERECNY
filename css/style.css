@@ -24,7 +24,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  padding-block: 1rem;
+  padding-block: 1.5rem;
   margin: 0;
   color: #890095;
   background: linear-gradient(to right, #e644f4, #010864);
@@ -36,10 +36,6 @@ h2 {
   margin: 1rem 0 0;
   font-size: clamp(1.1rem, 1vw + 0.6rem, 1.3rem);
   color: #434343;
-}
-
-div {
-  border: 1px solid black;
 }
 
 .center {
@@ -54,6 +50,12 @@ div {
   background-color: hsla(76, 100%, 82%, 0.77);
   background-image: radial-gradient(at 82% 29%, hsla(320, 86%, 62%, 0.52) 0px, transparent 50%), radial-gradient(at 51% 18%, hsl(102, 84%, 72%) 0px, transparent 50%), radial-gradient(at 76% 71%, hsla(347, 100%, 70%, 0.28) 0px, transparent 50%), radial-gradient(at 54% 81%, hsla(284, 73%, 64%, 0.76) 0px, transparent 50%), radial-gradient(at 0% 80%, hsla(359, 100%, 84%, 0.87) 0px, transparent 50%), radial-gradient(at 30% 70%, hsl(169, 100%, 50%) 0px, transparent 50%), radial-gradient(at 99% 79%, hsla(54, 100%, 70%, 0.5) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(293, 100%, 76%) 0px, transparent 50%);
   background-attachment: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
+}
+
+.reference {
+  font-weight: 600;
+  color: #890095;
 }
 
 .list__item {
@@ -61,7 +63,7 @@ div {
 }
 
 .header__top {
-  padding-top: 0.5rem;
+  padding-block: 0.2rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -80,16 +82,9 @@ div {
   margin: auto;
 }
 
-.menu {
-  height: 100%;
-  margin: 1rem 0;
-}
 .menu__checkbox {
   position: absolute;
   left: -9999px;
-}
-.menu__checkbox:checked ~ .menu__checkbox__box {
-  display: block;
 }
 .menu__toggler {
   cursor: pointer;
@@ -107,15 +102,17 @@ div {
   display: block;
   padding: 0.5rem;
   text-transform: uppercase;
-  text-decorationquery: none;
+  text-decoration: none;
   text-align: center;
   color: #434343;
 }
 .menu__item:hover {
   color: #890095;
-  background-image: radial-gradient(at 82% 29%, hsla(320, 86%, 62%, 0.52) 0px, transparent 50%), radial-gradient(at 51% 18%, hsl(102, 84%, 72%) 0px, transparent 50%), radial-gradient(at 76% 71%, hsla(347, 100%, 70%, 0.28) 0px, transparent 50%), radial-gradient(at 54% 81%, hsla(284, 73%, 64%, 0.76) 0px, transparent 50%), radial-gradient(at 0% 80%, hsla(359, 100%, 84%, 0.87) 0px, transparent 50%), radial-gradient(at 30% 70%, hsl(169, 100%, 50%) 0px, transparent 50%), radial-gradient(at 99% 79%, hsla(54, 100%, 70%, 0.5) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(293, 100%, 76%) 0px, transparent 50%);
-  background-attachment: fixed;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
   border-radius: 5px;
+}
+.menu__checkbox:checked ~ .menu__box {
+  display: block;
 }
 
 @media screen and (min-width: 550px) {
@@ -189,7 +186,8 @@ div {
   display: block;
   width: 100%;
   aspect-ratio: 1/1;
-  opacity: 0.8;
+  opacity: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
 }
 .offer__item {
   display: grid;
@@ -201,7 +199,6 @@ div {
   padding: 0 3vw;
   border-radius: 10px;
   grid-column: 2;
-  opacity: 0.8;
 }
 
 @media screen and (min-width: 1000px) {
@@ -239,14 +236,9 @@ div {
   border-top: 1px solid #890095;
 }
 
-@media screen and (min-width: 1000px) {
-  .review {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 .framed-item {
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
   padding: 0.5rem;
 }
 .framed-item p {
@@ -317,4 +309,48 @@ div {
 }
 .logo__description {
   letter-spacing: 0.14em;
+}
+
+.form {
+  width: min(100%, 500px);
+  padding: 2rem;
+  border-radius: 5px;
+  margin: auto;
+}
+.form__label {
+  display: block;
+  margin-block: 0.5rem;
+  color: #434343;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+  font-family: "Open Sans", sans-serif;
+}
+.form__input {
+  color: #434343;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
+  min-height: 2em;
+  margin-bottom: 1.5rem;
+}
+.form__button-box {
+  display: grid;
+  justify-content: end;
+}
+.form__button {
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
+  font-family: "Open Sans", sans-serif;
+  color: #434343;
+  font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

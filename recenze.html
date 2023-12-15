@@ -15,7 +15,34 @@ title: Lenka Šeblová - recenze
         <h2 class="center">Děkuji za vaši důvěru.</h2>
 
 
-        <p class="center">Váš názor je pro mě důležitý, zpětnou vazbu mi můžete poskytnout v <a href="#"> tomto formuláři.</a></p>
+        <p class="center">Váš názor je pro mě důležitý, zpětnou vazbu mi můžete poskytnout v <button class="reference" id="open"> tomto formuláři.</button></p>
+        
+        <dialog class="modal" id="modal">
+            
+            <form class="form gradient" method="dialog" action="https://submit-form.com/05mj2ZSz8">
+                <div class="form__button-box">
+                    <button class="form__button" id="close" name="close">x</button>
+                </div>
+                
+                <label for="message" class="form__label">Zde mi můžete zanechat recenzi, případně vzkaz:</label>
+                <textarea class="form__input" name="message" id="message" rows="7" required placeholder="vaše zpráva"></textarea>
+            
+                <label for="name" class="form__label">Vaše jméno:</label>
+                <input class="form__input" name="name" type="text" id="name" placeholder="jméno" required>
+            
+                <label for="email" class="form__label">Vaše email (nepovinný):</label>
+                <input class="form__input" name="email" type="email" id="email" placeholder="email">
+                 
+                <div class="form__button-box">              
+                    <input class="form__button" type="submit" value="odeslat" id="send"  name="send" formmethod="dialog">
+                </div>
+            </form>
+        </dialog>
+        
+        <script src="/javascript/modal.js"></script>
+        
+
+
 
         <div class="review">
             <div class="framed-item">
@@ -45,5 +72,7 @@ title: Lenka Šeblová - recenze
     </div>
 
 </main>
+
+
 
         

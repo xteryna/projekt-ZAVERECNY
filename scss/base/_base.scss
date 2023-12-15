@@ -7,6 +7,7 @@ body {
     font-size: clamp(0.8rem, 1vw + 0.5rem ,1rem);
     font-family: variables.$f-text;
     margin: 0;
+    // background-color: rgb(255, 247, 253);
 }
 
 p {
@@ -21,7 +22,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
-    padding-block: 1rem;
+    padding-block: 1.5rem;
     margin: 0;
     color: variables.$c-primary;
     
@@ -36,9 +37,9 @@ h2 {
     color: variables.$c-sedondary;
 }
 
-div {
-    border: 1px solid black;
-}
+// div {
+//     border: 1px solid black;
+// }
 
 
 
@@ -54,6 +55,12 @@ div {
     background-color: variables.$c-background;
     background-image: variables.$gradient-back;
     background-attachment: fixed;
+    box-shadow: variables.$shadow;
+}
+
+.reference {
+    font-weight: 600;
+    color: variables.$c-primary;
 }
 
 .list__item {

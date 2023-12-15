@@ -28,7 +28,8 @@
         display: block;
         width: 100%;
         aspect-ratio: 1/1;
-        opacity: 0.8;       
+        opacity: 0.7;       
+        box-shadow: variables.$shadow;
     }
 
     &__item {
@@ -42,7 +43,7 @@
         padding: 0 3vw;
         border-radius: 10px;
         grid-column: 2;
-        opacity: 0.8;
+        // box-shadow: variables.$shadow;
     }
 }
 
@@ -89,11 +90,11 @@
     border-top: 1px solid variables.$c-primary
 }
 
-@media screen and (min-width:variables.$m-PC) {
-    .review {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+// @media screen and (min-width:variables.$m-PC) {
+//     .review {
+//         grid-template-columns: 1fr 1fr;
+//     }
+// }
 
 
 .framed-item {

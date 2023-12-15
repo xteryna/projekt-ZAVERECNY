@@ -1,0 +1,64 @@
+@use '../abstracts/variables';
+
+.form {
+    width: min(100%, 500px);
+    padding: 2rem;
+    border-radius: 5px;
+    margin: auto;
+    
+    
+    
+    &__label {
+        display: block;
+        margin-block: 0.5rem;
+        color: variables.$c-sedondary;
+        font-size: clamp(0.8rem, 1vw + 0.5rem ,1rem);
+        font-family: variables.$f-text;
+        
+    }
+
+    &__input {
+        color: variables.$c-sedondary;
+        width: 100%;
+        border-radius: 5px;
+        font-family: variables.$f-text;
+        border: none;
+        box-shadow: variables.$shadow;
+        min-height: 2em;
+        margin-bottom: 1.5rem;
+    }
+    &__button-box {
+        display: grid;
+        justify-content: end;
+    }
+    &__button {
+        box-shadow: variables.$shadow;
+        font-family: variables.$f-text;
+        color: variables.$c-sedondary;
+        font-size: clamp(0.8rem, 1vw + 0.5rem ,1rem);
+        background-color:  rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        border: none;
+        padding: 0.5rem 1rem;
+        } 
+
+    // &__close-button {
+    //     font-size: large;
+    //     background-color: rgba(0 0 0 / 0%);
+    //     padding: 2px 7px;
+    //     border: none;
+    //     color: variables.$c-sedondary;
+
+    //     &:hover {
+    //         background-color: #ED93FC;
+    //     }
+
+    // }
+}
+
+dialog::backdrop {
+    background-color: rgba(0 0 0 / 50%);
+    visibility: visible;
+    opacity: 1;
+  }
+
