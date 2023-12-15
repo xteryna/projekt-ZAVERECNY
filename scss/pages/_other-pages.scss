@@ -137,12 +137,24 @@
 
 // stranka kontakty
 
+.personal-contact {
+    margin: 0 auto 100px;
+    font-size:larger;
+    box-shadow: variables.$shadow;
+    width: fit-content;
+    padding-inline: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .social-networks {
     display: flex;
     
     gap: 2rem;
     justify-content: center;
+
+
     &__icon {
-        width: 70px;
+        width: clamp(40px,10vw,50px);
     }
 }

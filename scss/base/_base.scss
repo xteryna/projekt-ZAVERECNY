@@ -8,6 +8,7 @@ body {
     font-family: variables.$f-text;
     margin: 0;
     // background-color: rgb(255, 247, 253);
+    color: variables.$c-sedondary;
 }
 
 p {
@@ -36,11 +37,6 @@ h2 {
     font-size: clamp(1.1rem, 1vw + 0.6rem ,1.3rem);
     color: variables.$c-sedondary;
 }
-
-// div {
-//     border: 1px solid black;
-// }
-
 
 
 .center {
