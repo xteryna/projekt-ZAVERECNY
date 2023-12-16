@@ -87,3 +87,9 @@ h3 {
 .list__item {
     list-style-type:" - ";
 }
+
+
+a:hover, .reference:hover {
+    color: variables.$c-hover;
+}
+

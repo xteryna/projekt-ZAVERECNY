@@ -32,7 +32,7 @@
         color: variables.$c-sedondary;        
     
         &:hover {
-            color: variables.$c-primary;
+            color: variables.$c-hover;
             box-shadow: variables.$shadow;
             border-radius: 5px;
         }

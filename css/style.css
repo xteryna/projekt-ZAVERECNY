@@ -86,6 +86,10 @@ h3 {
   list-style-type: " - ";
 }
 
+a:hover, .reference:hover {
+  color: #010864;
+}
+
 .header__top {
   padding-block: 0.2rem;
 }
@@ -132,7 +136,7 @@ h3 {
   color: #434343;
 }
 .menu__item:hover {
-  color: #890095;
+  color: #010864;
   box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 7px;
   border-radius: 5px;
 }
