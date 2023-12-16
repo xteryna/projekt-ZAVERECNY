@@ -257,6 +257,12 @@ h3 {
   border-top: 1px solid #890095;
 }
 
+.thanks {
+  display: block;
+  margin-inline: auto;
+  opacity: 0.8;
+}
+
 .framed-item {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 7px;

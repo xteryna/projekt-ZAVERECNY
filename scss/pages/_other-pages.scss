@@ -88,11 +88,11 @@
     border-top: 1px solid variables.$c-primary
 }
 
-// @media screen and (min-width:variables.$m-PC) {
-//     .review {
-//         grid-template-columns: 1fr 1fr;
-//     }
-// }
+.thanks {
+    display: block;
+    margin-inline: auto;
+    opacity: 0.8;
+}
 
 
 .framed-item {
