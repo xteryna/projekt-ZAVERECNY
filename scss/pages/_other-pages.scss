@@ -139,8 +139,8 @@
 
 .personal-contact {
     margin: 0 auto 100px;
-    font-size:larger;
-    box-shadow: variables.$shadow;
+    font-size: calc(clamp(0.8rem, 1vw + 0.5rem ,1rem)*1.5);
+    // box-shadow: variables.$shadow;
     width: fit-content;
     padding-inline: 1rem;
     border-radius: 10px;
@@ -152,7 +152,7 @@
     
     gap: 2rem;
     justify-content: center;
-
+    
 
     &__icon {
         width: clamp(40px,10vw,50px);

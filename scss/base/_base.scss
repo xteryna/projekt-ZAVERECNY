@@ -17,22 +17,35 @@ p {
     color: variables.$c-sedondary;
 }
 
-h1 {
+h1, h2 {
     font-family: variables.$f-titles;
-    font-size: clamp(2rem, 2vw + 2rem ,5rem);
+    
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
+
+    color: variables.$c-title;
+    
+
+}
+h1 {
     padding-block: 1.5rem;
     margin: 0;
-    color: variables.$c-primary;
-    
+    font-size: clamp(2.5rem, 3vw + 2rem ,5rem);
     background: variables.$gradient-text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 h2 {
+    
+    font-size: calc(clamp(2.5rem, 3vw + 2rem ,5rem) * 0.5);
+    margin-block: 0;
+    
+    
+}
+
+h3 {
     margin: 1rem 0 0;
     font-size: clamp(1.1rem, 1vw + 0.6rem ,1.3rem);
     color: variables.$c-sedondary;
@@ -43,8 +56,15 @@ h2 {
     text-align: center;
 }
 
+.indent {
+    margin-block: 5rem;
+}
 .nowrap {
     white-space: nowrap;
+}
+
+.title-bar {
+    padding-block: 5px;
 }
 
 .gradient {
@@ -63,6 +83,3 @@ h2 {
     list-style-type:" - ";
 }
 
-.svg {
-    color: red;
-}

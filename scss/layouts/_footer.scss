@@ -6,4 +6,6 @@
     font-size: 80%;
     color: variables.$c-sedondary; 
     margin: auto;
+    // border-top: 1px solid variables.$c-sedondary;
+    box-shadow: variables.$shadow;
 }

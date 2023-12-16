@@ -1,5 +1,6 @@
 $c-primary: #890095;
 $c-sedondary: #434343;
+$c-title: #5D44A5;
 $c-transparent: rgba(0, 0, 0, 0);
 $c-semitransparent:  rgba(255, 255, 255, 0.3);
 $c-background: hsla(76, 100%, 82%, 0.77);
@@ -12,14 +13,15 @@ radial-gradient(at 0% 80%, hsla(359,100%,84%,0.87) 0px, transparent 50%),
 radial-gradient(at 30% 70%, hsla(169,100%,50%,1) 0px, transparent 50%),
 radial-gradient(at 99% 79%, hsla(54,100%,70%,0.5) 0px, transparent 50%),
 radial-gradient(at 0% 0%, hsla(293,100%,76%,1) 0px, transparent 50%);
+
 $gradient-text: linear-gradient(to right, #e644f4, #010864);
 
 
 $pad-sides: 5vw;
-$shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
+$shadow: rgba(0, 0, 0, 0.24) 1px 1px 7px;
 
 
-$f-titles: 'Montserrat', sans-serif;
+$f-titles: 'Quicksand', sans-serif;
 $f-text: 'Open Sans', sans-serif;
 // $f-motto: 'Pinyon Script', cursive;
 $f-motto: 'Qwitcher Grypen', cursive;
