@@ -1,8 +1,6 @@
 @use '../abstracts/variables';
 
-.inside {
-    padding: 1rem variables.$pad-sides;
-}
+
 
 
 // stranka o mne
@@ -140,7 +138,6 @@
 .personal-contact {
     margin: 0 auto 100px;
     font-size: calc(clamp(0.8rem, 1vw + 0.5rem ,1rem)*1.5);
-    // box-shadow: variables.$shadow;
     width: fit-content;
     padding-inline: 1rem;
     border-radius: 10px;
@@ -149,7 +146,6 @@
 
 .social-networks {
     display: flex;
-    
     gap: 2rem;
     justify-content: center;
     

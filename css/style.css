@@ -25,6 +25,7 @@ h1, h2 {
   text-align: center;
   font-weight: 400;
   color: #5D44A5;
+  color: darkblue;
 }
 
 h1 {
@@ -38,7 +39,7 @@ h1 {
 
 h2 {
   font-size: calc(clamp(2.5rem, 3vw + 2rem, 5rem) * 0.5);
-  margin-block: 0;
+  margin-block: 1rem;
 }
 
 h3 {
@@ -47,12 +48,18 @@ h3 {
   color: #434343;
 }
 
+.inside {
+  padding: 1rem 5vw;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .center {
   text-align: center;
 }
 
 .indent {
-  margin-block: 5rem;
+  margin-block: 5vw;
 }
 
 .nowrap {
@@ -180,10 +187,6 @@ h3 {
        object-fit: cover;
   }
 }
-.inside {
-  padding: 1rem 5vw;
-}
-
 .courses {
   padding-block: 3rem;
 }
@@ -308,7 +311,7 @@ h3 {
 .motto {
   font-family: "Qwitcher Grypen", cursive;
   font-size: clamp(1.5rem, 6vw + 1rem, 2.4rem);
-  margin: 1rem auto 3rem;
+  margin: 1vw auto 5vw;
   color: #890095;
   display: flex;
   flex-wrap: wrap;

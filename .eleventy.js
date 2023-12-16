@@ -11,6 +11,8 @@ module.exports = function(eleventyConfig) {
   // Zkopírovat javascript/ to _site/javascript /
   eleventyConfig.addPassthroughCopy("javascript");
 
+  eleventyConfig.addPassthroughCopy("favicons");
+
   return {
     // možné formáty šablon
     templateFormats: ["njk", "html", "md", "liquid"],

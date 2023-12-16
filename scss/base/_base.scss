@@ -25,7 +25,7 @@ h1, h2 {
     font-weight: 400;
 
     color: variables.$c-title;
-    
+    color: darkblue;
 
 }
 h1 {
@@ -40,7 +40,7 @@ h1 {
 h2 {
     
     font-size: calc(clamp(2.5rem, 3vw + 2rem ,5rem) * 0.5);
-    margin-block: 0;
+    margin-block: 1rem;
     
     
 }
@@ -51,13 +51,18 @@ h3 {
     color: variables.$c-sedondary;
 }
 
+.inside {
+    padding: 1rem variables.$pad-sides;
+    max-width: 1200px;
+    margin: auto;
+}
 
 .center {
     text-align: center;
 }
 
 .indent {
-    margin-block: 5rem;
+    margin-block: 5vw;
 }
 .nowrap {
     white-space: nowrap;
