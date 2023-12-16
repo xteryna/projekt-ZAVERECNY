@@ -156,5 +156,6 @@
 
     &__icon {
         width: clamp(40px,10vw,50px);
+        color: variables.$c-sedondary;
     }
 }

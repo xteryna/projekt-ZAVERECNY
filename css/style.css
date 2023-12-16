@@ -63,6 +63,10 @@ h2 {
   list-style-type: " - ";
 }
 
+.svg {
+  color: red;
+}
+
 .header__top {
   padding-block: 0.2rem;
 }
@@ -286,6 +290,7 @@ h2 {
 }
 .social-networks__icon {
   width: clamp(40px, 10vw, 50px);
+  color: #434343;
 }
 
 .motto {
